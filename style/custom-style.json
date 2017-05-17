@@ -3578,7 +3578,7 @@
         "minzoom": 12,
         "layout": {
             "text-field": "{name_en}",
-            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
             "symbol-placement": "line",
             "text-max-angle": 30,
             "text-size": {
@@ -3846,7 +3846,7 @@
         "minzoom": 5,
         "layout": {
             "text-field": "{name_en}",
-            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
             "text-max-width": 7,
             "text-size": {
                 "base": 1,
@@ -4495,7 +4495,7 @@
                     [6, 400]
                 ]
             },
-            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
             "symbol-placement": "line",
             "text-field": "{name_en}",
             "text-letter-spacing": 0.1,
@@ -4523,7 +4523,7 @@
             "text-max-width": 5,
             "text-letter-spacing": 0.1,
             "text-line-height": 1.5,
-            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1,
                 "stops": [
@@ -4559,7 +4559,7 @@
                 ]
             },
             "symbol-spacing": 250,
-            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
             "symbol-placement": "line",
             "text-field": "{name_en}",
             "text-letter-spacing": 0.15,
@@ -4587,7 +4587,7 @@
             "text-max-width": 5,
             "text-letter-spacing": 0.15,
             "text-line-height": 1.5,
-            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1.1,
                 "stops": [
@@ -4619,7 +4619,7 @@
             "text-letter-spacing": 0.25,
             "text-line-height": 1.1,
             "symbol-placement": "line",
-            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1,
                 "stops": [
@@ -4650,7 +4650,7 @@
             "text-max-width": 4,
             "text-letter-spacing": 0.25,
             "text-line-height": 1.5,
-            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Italic", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1,
                 "stops": [
