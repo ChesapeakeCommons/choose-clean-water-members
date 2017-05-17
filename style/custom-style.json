@@ -86,7 +86,7 @@
             "type": "vector"
         }
     },
-    "sprite": "mapbox://sprites/mapbox/streets-v8",
+    "sprite": "http://gists.chesapeakecommons.org/choose-clean-water/sprite",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [{
         "id": "background",
@@ -3578,7 +3578,7 @@
         "minzoom": 12,
         "layout": {
             "text-field": "{name_en}",
-            "text-font": ["Proxima Nova Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
             "symbol-placement": "line",
             "text-max-angle": 30,
             "text-size": {
@@ -3611,7 +3611,7 @@
             },
             "text-max-angle": 38,
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-padding": 1,
             "text-offset": [0, 0],
             "text-field": "{name_en}",
@@ -3646,7 +3646,7 @@
             },
             "text-max-angle": 38,
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-padding": 2,
             "text-offset": [0, 0],
             "text-field": "{name_en}",
@@ -3681,7 +3681,7 @@
             },
             "text-max-angle": 30,
             "symbol-spacing": 500,
-            "text-font": ["Proxima Nova Regular", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
             "symbol-placement": "line",
             "text-padding": 1,
             "text-rotation-alignment": "map",
@@ -3716,7 +3716,7 @@
             },
             "text-max-angle": 30,
             "symbol-spacing": 500,
-            "text-font": ["Proxima Nova Regular", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
             "symbol-placement": "line",
             "text-padding": 1,
             "text-rotation-alignment": "map",
@@ -3751,7 +3751,7 @@
             },
             "text-max-angle": 30,
             "symbol-spacing": 400,
-            "text-font": ["Proxima Nova Regular", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
             "symbol-placement": "line",
             "text-padding": 1,
             "text-rotation-alignment": "map",
@@ -3784,7 +3784,7 @@
             },
             "text-max-angle": 38,
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-padding": 2,
             "text-offset": [0, 0],
             "text-field": "{name_en}",
@@ -3819,7 +3819,7 @@
             },
             "text-max-angle": 38,
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-padding": 2,
             "text-offset": [0, 0],
             "text-field": "{name_en}",
@@ -3846,7 +3846,7 @@
         "minzoom": 5,
         "layout": {
             "text-field": "{name_en}",
-            "text-font": ["Proxima Nova Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
             "text-max-width": 7,
             "text-size": {
                 "base": 1,
@@ -3880,7 +3880,7 @@
             },
             "text-max-angle": 38,
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-padding": 2,
             "text-offset": [0, 0],
             "text-field": "{name_en}",
@@ -3915,7 +3915,7 @@
             },
             "text-max-angle": 38,
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-padding": 2,
             "text-offset": [0, 0],
             "text-field": "{name_en}",
@@ -3956,7 +3956,7 @@
                 ]
             },
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-padding": 2,
             "text-offset": [0, 0.75],
             "text-anchor": "top",
@@ -3992,7 +3992,7 @@
             },
             "text-max-angle": 38,
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Regular", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
             "text-padding": 2,
             "text-offset": [0, 0],
             "text-field": "{name_en}",
@@ -4018,7 +4018,7 @@
             "text-transform": "uppercase",
             "text-letter-spacing": 0.1,
             "text-max-width": 7,
-            "text-font": ["Proxima Nova Regular", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
             "text-padding": 3,
             "text-size": {
                 "base": 1,
@@ -4045,7 +4045,7 @@
         "layout": {
             "text-field": "{name_en}",
             "text-transform": "uppercase",
-            "text-font": ["Proxima Nova Regular", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
             "text-letter-spacing": 0.15,
             "text-max-width": 7,
             "text-padding": 3,
@@ -4073,7 +4073,7 @@
         "minzoom": 10,
         "layout": {
             "text-field": "{name_en}",
-            "text-font": ["Proxima Nova Regular", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1,
                 "stops": [
@@ -4098,7 +4098,7 @@
         "minzoom": 11,
         "layout": {
             "text-field": "{name_en}",
-            "text-font": ["Proxima Nova Regular", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
             "text-max-width": 7,
             "text-size": {
                 "base": 1,
@@ -4140,8 +4140,8 @@
             "text-font": {
                 "base": 1,
                 "stops": [
-                    [11, ["Proxima Nova Regular", "Arial Unicode MS Regular"]],
-                    [12, ["Proxima Nova Semibold", "Arial Unicode MS Regular"]]
+                    [11, ["Open Sans Regular", "Arial Unicode MS Regular"]],
+                    [12, ["Open Sans Semibold", "Arial Unicode MS Regular"]]
                 ]
             },
             "text-padding": 2,
@@ -4186,7 +4186,7 @@
             },
             "text-max-angle": 38,
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Regular", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
             "text-padding": 2,
             "text-offset": [0, 0],
             "text-field": "{name_en}",
@@ -4217,8 +4217,8 @@
             "text-font": {
                 "base": 1,
                 "stops": [
-                    [7, ["Proxima Nova Regular", "Arial Unicode MS Regular"]],
-                    [8, ["Proxima Nova Semibold", "Arial Unicode MS Regular"]]
+                    [7, ["Open Sans Regular", "Arial Unicode MS Regular"]],
+                    [8, ["Open Sans Semibold", "Arial Unicode MS Regular"]]
                 ]
             },
             "text-offset": [0, 0],
@@ -4270,8 +4270,8 @@
             "text-font": {
                 "base": 1,
                 "stops": [
-                    [7, ["Proxima Nova Regular", "Arial Unicode MS Regular"]],
-                    [8, ["Proxima Nova Semibold", "Arial Unicode MS Regular"]]
+                    [7, ["Open Sans Regular", "Arial Unicode MS Regular"]],
+                    [8, ["Open Sans Semibold", "Arial Unicode MS Regular"]]
                 ]
             },
             "icon-image": "dot-10"
@@ -4313,8 +4313,8 @@
             "text-font": {
                 "base": 1,
                 "stops": [
-                    [7, ["Proxima Nova Regular", "Arial Unicode MS Regular"]],
-                    [8, ["Proxima Nova Semibold", "Arial Unicode MS Regular"]]
+                    [7, ["Open Sans Regular", "Arial Unicode MS Regular"]],
+                    [8, ["Open Sans Semibold", "Arial Unicode MS Regular"]]
                 ]
             },
             "text-offset": {
@@ -4368,8 +4368,8 @@
             "text-font": {
                 "base": 1,
                 "stops": [
-                    [7, ["Proxima Nova Regular", "Arial Unicode MS Regular"]],
-                    [8, ["Proxima Nova Semibold", "Arial Unicode MS Regular"]]
+                    [7, ["Open Sans Regular", "Arial Unicode MS Regular"]],
+                    [8, ["Open Sans Semibold", "Arial Unicode MS Regular"]]
                 ]
             },
             "text-offset": {
@@ -4429,8 +4429,8 @@
             "text-font": {
                 "base": 1,
                 "stops": [
-                    [7, ["Proxima Nova Regular", "Arial Unicode MS Regular"]],
-                    [8, ["Proxima Nova Semibold", "Arial Unicode MS Regular"]]
+                    [7, ["Open Sans Regular", "Arial Unicode MS Regular"]],
+                    [8, ["Open Sans Semibold", "Arial Unicode MS Regular"]]
                 ]
             },
             "text-offset": {
@@ -4495,7 +4495,7 @@
                     [6, 400]
                 ]
             },
-            "text-font": ["Proxima Nova Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
             "symbol-placement": "line",
             "text-field": "{name_en}",
             "text-letter-spacing": 0.1,
@@ -4523,7 +4523,7 @@
             "text-max-width": 5,
             "text-letter-spacing": 0.1,
             "text-line-height": 1.5,
-            "text-font": ["Proxima Nova Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1,
                 "stops": [
@@ -4559,7 +4559,7 @@
                 ]
             },
             "symbol-spacing": 250,
-            "text-font": ["Proxima Nova Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
             "symbol-placement": "line",
             "text-field": "{name_en}",
             "text-letter-spacing": 0.15,
@@ -4587,7 +4587,7 @@
             "text-max-width": 5,
             "text-letter-spacing": 0.15,
             "text-line-height": 1.5,
-            "text-font": ["Proxima Nova Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1.1,
                 "stops": [
@@ -4619,7 +4619,7 @@
             "text-letter-spacing": 0.25,
             "text-line-height": 1.1,
             "symbol-placement": "line",
-            "text-font": ["Proxima Nova Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1,
                 "stops": [
@@ -4650,7 +4650,7 @@
             "text-max-width": 4,
             "text-letter-spacing": 0.25,
             "text-line-height": 1.5,
-            "text-font": ["Proxima Nova Regular Italic", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Regular Italic", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1,
                 "stops": [
@@ -4685,7 +4685,7 @@
                 ]
             },
             "text-transform": "uppercase",
-            "text-font": ["Proxima Nova Bold", "Arial Unicode MS Bold"],
+            "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
             "text-field": {
                 "base": 1,
                 "stops": [
@@ -4723,7 +4723,7 @@
                 ]
             },
             "text-transform": "uppercase",
-            "text-font": ["Proxima Nova Bold", "Arial Unicode MS Bold"],
+            "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
             "text-field": {
                 "base": 1,
                 "stops": [
@@ -4763,7 +4763,7 @@
                 ]
             },
             "text-transform": "uppercase",
-            "text-font": ["Proxima Nova Bold", "Arial Unicode MS Bold"],
+            "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
             "text-padding": 1,
             "text-field": {
                 "base": 1,
@@ -4796,7 +4796,7 @@
         "layout": {
             "text-field": "{name_en}",
             "text-max-width": 6,
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 0.9,
                 "stops": [
@@ -4837,7 +4837,7 @@
                 ]
             },
             "text-max-width": 6,
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1,
                 "stops": [
@@ -4878,7 +4878,7 @@
                     [3, 6]
                 ]
             },
-            "text-font": ["Proxima Nova Semibold", "Arial Unicode MS Regular"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Regular"],
             "text-size": {
                 "base": 1,
                 "stops": [
