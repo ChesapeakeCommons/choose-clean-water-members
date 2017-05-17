@@ -118,7 +118,7 @@
     <script>
     // womens march specific token
     mapboxgl.accessToken = 'pk.eyJ1IjoicmRhd2VzMSIsImEiOiJ0OHNqNUFFIn0.KpaFJHMqmruQ9UFeg2ATeA';
-    mapboxgl.util.getJSON('http://0.0.0.0:9000/data/coalition-mapped.json', (err, data) => {
+    mapboxgl.util.getJSON('/data/coalition-mapped.json', (err, data) => {
         if (err) {
             console.log(err);
         } else {
