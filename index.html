@@ -118,7 +118,7 @@
     <script>
     // womens march specific token
     mapboxgl.accessToken = 'pk.eyJ1IjoicmRhd2VzMSIsImEiOiJ0OHNqNUFFIn0.KpaFJHMqmruQ9UFeg2ATeA';
-    mapboxgl.util.getJSON('data/coalition-mapped.json', (err, data) => {
+    mapboxgl.util.getJSON('https://s3.amazonaws.com/mapbox-labs/labs-sisters-march/map-data.json', (err, data) => {
         if (err) {
             console.log(err);
         } else {
@@ -130,7 +130,7 @@
     const embed = !!window.location.search.match(/\?embed/g);
 
     const map = new mapboxgl.Map({
-        style: "mapbox://styles/rdawes1/cj2tkvg7u000g2srzl4mmz74s",
+        style: "mapbox://styles/rdawes1/cj3ynl0ou16452qpgqa9phb32",
         container: 'mapContainer',
         maxBounds: [
             [-212.34375, -85.34532513],
@@ -322,19 +322,19 @@
                             [{
                                 zoom: 1,
                                 value: 10
-                            }, 'hsl(2, 91%, 89%)'],
+                            }, '#0093D0'],
                             [{
                                 zoom: 1,
                                 value: 100
-                            }, '#f1615c'],
+                            }, '#0093D0'],
                             [{
                                 zoom: 5,
                                 value: 2
-                            }, 'hsl(2, 91%, 89%)'],
+                            }, '#0093D0'],
                             [{
                                 zoom: 5,
                                 value: 20
-                            }, '#f1615c']
+                            }, '#0093D0']
                         ]
                     },
                     'circle-radius': {
@@ -369,7 +369,7 @@
                 source: 'sister-marches',
                 layout: {
                     "text-field": "{point_count}",
-                    "text-font": ["Open Sans Regular"],
+                    
                     "text-size": 12,
                     "text-offset": [0, .2]
                 },
@@ -441,8 +441,6 @@
                 console.log('no location data for ', e.name);
             }
         }
-
-        console.log(output);
 
         assembleMap(output);
     }
