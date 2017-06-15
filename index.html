@@ -1,450 +1,53 @@
 
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <meta charset=utf-8 />
-    <title>Women's March on America | Mapbox</title>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
-    <link href="https://api.mapbox.com/mapbox-assembly/v0.3.0/assembly.min.css" rel="stylesheet">
-    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.css' type='text/css' />
-    <script async defer src="https://api.mapbox.com/mapbox-assembly/v0.3.0/assembly.js"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.0.1/mapbox-gl-geocoder.js'></script>
-    <script src="https://unpkg.com/@turf/turf@3.5.2/turf.min.js" charset="utf-8"></script>
-    <meta property="fb:app_id" content="691946374306463">
-    <meta property="og:type" content="article">
-    <meta property="og:image:width" content="851">
-    <meta property="og:image:height" content="503">
-    <meta property="og:image" content="https://www.mapbox.com/bites/00327/wmw.jpg" />
-    <meta property="og:url" content="https://www.mapbox.com/bites/00327/">
-    <meta property="og:title" content="Women's March on America | Mapbox">
-    <meta property="og:description" content="Find a Women's March on Washington sister event near you">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.mapbox.com/bites/00327/wmw.jpg">
-    <meta name="twitter:site" content="@Mapbox">
-    <meta name="twitter:creator" content="@mollymerp">
-    <meta name="twitter:title" content="Women's March on America | Mapbox">
-    <meta name="twitter:description" content="Find a Women's March on Washington sister event near you">
-    <style>
-    body {
-        margin: 0;
-        padding: 0;
-        color: #213444;
-    }
-    
-    #mapContainer {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-    }
-    
-    .popup-container {
-        max-width: 200px;
-        color: white;
-    }
-    
-    a:hover {
-        color: #f1615c;
-    }
-    
-    #march-list {
-        background-color: #213444;
-        color: white;
-    }
-    
-    #sidebar,
-    .mapboxgl-popup-content {
-        background-color: #213444;
-    }
-    
-    .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-        border-top-color: #213444!important;
-    }
-    
-    .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-        border-left-color: #213444!important;
-    }
-    
-    .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-        border-right-color: #213444!important;
-    }
-    
-    .mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
-        border-right-bottom: #213444!important;
-    }
-    
-    #search {
-        background-color: #f1615c;
-        color: white;
-    }
-    
-    .address {
-        color: #8B9298;
-    }
-    
-    .list-item:hover {
-        background-color: #172430;
-    }
-    
-    .mapboxgl-ctrl-geocoder {
-        width: auto;
-    }
-    
-    .suggestions {
-        border-radius: 8px!important;
-        margin-top: 6px!important;
-    }
-    </style>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta charset=utf-8 />
+  <title>Choose Clean Water Coalition</title>
+  <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+  <link href='index.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.1.0/mapbox-gl-geocoder.css' type='text/css' />
 </head>
 
 <body>
-    <div id="sidebar" class='absolute top-ml left top z2 w-full hmax-full w300-mm m12-mm round-bold-mm'>
-        <div id='search' class='flex-parent flex-parent--column shadow-darken10 viewport-third h-auto-ml hmax-full-mm hmax72 round-bold-mm'>
-            <div class='flex-child p12'>
-                <h3 class='align-l-ml txt-m txt-bold mb6 none block-mm'>Find nearby events</h3>
-                <div id='geocoder-container'></div>
-            </div>
-            <div id='march-list' class='shadow-darken10 scroll-auto hmax-420-mm hmax240 round-b-bold-mm'>
-            </div>
+
+<div id="sidebar" class="sidebar pin-topleft z1">
+  <div class="sidebar-inner fill-bg dark round sidebar-inner">
+    <div class="flex-scroll scroll-styled pad4">
+      <h2>The Coalition Map</h2>
+      <p class="prose show-mobile">
+To serve as a strong, united, effective advocate for restoring the thousands of streams and rivers flowing to the Chesapeake Bay by coordinating policy, message action and accountability for clean water at the federal, state and local levels.
+      </p>
+      <p class="prose hide-mobile">
+<strong>Our Mission:  </strong>To serve as a strong, united, effective advocate for restoring the thousands of streams and rivers flowing to the Chesapeake Bay by coordinating policy, message action and accountability for clean water at the federal, state and local levels.
+      </p>
+      <div id="counter" class="dark col3">
+        <h1 id="buildings">200+</h1>
+        <h3 class="space-bottom2"><span style="font-family: 'Open Sans', sans-serif;">Unified voices working to improve the </span><span id="time">Chesapeake Bay</span></h3>
+        
+      </div>
+
+      <div class="projects">
+        <h3 class="space-bottom1">Chesapeake Bay States</h3>
+        <div id="baystates" class="button fill-navy-dark dark">
+          <img class="flag" src="img/bay.png" alt="baystates" />
+          <span> Bay States</span>
         </div>
+         <div id="pa" class="button fill-navy-dark dark">
+          <img class="flag" src="img/ny.png" alt="ny" />
+          <span> New York</span>
+        </div>
+      </div>
     </div>
-    <a class='absolute bottom left z1 px12' target='_blank' href='https://www.mapbox.com/'>
-        <img src='data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIgeT0iMCIgd2lkdGg9IjU5LjEiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCA1OS4xIDE4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1OS4xMTkgMTgiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0xLjQgMEMwLjYgMC4xIDAgMC44IDAgMS41TDAgMTMuNEMwIDE0LjIgMC43IDE0LjggMS41IDE0LjhMMy4zIDE0LjhDNCAxNC44IDQuNyAxNC4yIDQuOCAxMy40TDQuOCA5LjEgNS41IDEwLjNDNiAxMS4yIDcuNSAxMS4yIDggMTAuM0w4LjggOS4xIDguOCAxMy40QzguOCAxNC4xIDkuNSAxNC44IDEwLjIgMTQuOEwxMiAxNC44QzEyLjggMTQuOCAxMy41IDE0LjIgMTMuNSAxMy40TDEzLjUgMTMuMkMxNC41IDE0LjMgMTUuOSAxNSAxNy42IDE1TDIxLjcgMTUgMjEuNyAxNi41QzIxLjcgMTcuMyAyMi4zIDE4IDIzLjEgMThMMjQuOSAxOEMyNS43IDE4IDI2LjQgMTcuMyAyNi40IDE2LjVMMjYuNCAxNUMyOC4xIDE1IDI5LjUgMTQuNCAzMC41IDEzLjNMMzAuNSAxMy41QzMwLjUgMTMuOSAzMC43IDE0LjMgMzEgMTQuNiAzMS4zIDE0LjkgMzEuNiAxNSAzMiAxNUwzNS4zIDE1QzM3LjQgMTUgMzkuMiAxNCA0MC4zIDEyLjMgNDEuMyAxMy45IDQzLjEgMTUgNDUuMSAxNSA0Ni4yIDE1IDQ3LjEgMTQuOCA0Ny45IDE0LjMgNDguMiAxNC42IDQ4LjcgMTQuOCA0OS4xIDE0LjhMNTEuMyAxNC44QzUxLjcgMTQuOCA1Mi4yIDE0LjYgNTIuNSAxNC4yTDUzLjQgMTIuOSA1NC4zIDE0LjJDNTQuNiAxNC42IDU1LjEgMTQuOCA1NS41IDE0LjhMNTcuNyAxNC44QzU4LjggMTQuOCA1OS41IDEzLjQgNTguOSAxMi41TDU2LjMgOC45IDU4LjcgNS41QzU5LjQgNC42IDU4LjYgMy4xIDU3LjUgMy4xTDU1LjMgMy4xQzU0LjkgMy4xIDU0LjQgMy40IDU0LjEgMy44TDUzLjQgNC44IDUyLjcgMy44QzUyLjQgMy40IDUxLjkgMy4xIDUxLjQgMy4xTDQ5LjMgMy4xQzQ4LjggMy4xIDQ4LjMgMy40IDQ4IDMuOCA0Ny4yIDMuMyA0Ni4yIDMgNDUuMSAzIDQzLjEgMyA0MS4zIDQuMSA0MC4yIDUuNyAzOS4yIDQgMzcuNCAzIDM1LjMgM0wzNS4zIDEuNUMzNS4zIDEuMSAzNS4xIDAuNyAzNC44IDAuNCAzNC42IDAuMiAzNC4yIDAgMzMuOCAwTDMyIDBDMzEuMyAwIDMwLjUgMC44IDMwLjUgMS41TDMwLjUgNC43QzI5LjUgMy42IDI4LjEgMyAyNi41IDNMMjMuMSAzQzIyLjQgMyAyMS43IDMuNyAyMS43IDQuNUwyMS43IDQuOEMyMC42IDMuNyAxOS4yIDMgMTcuNiAzIDE1LjkgMyAxNC41IDMuNyAxMy41IDQuOEwxMy41IDEuNUMxMy41IDAuNyAxMi44IDAgMTIgMEwxMC42IDBDOS42IDAgOC40IDAuNCA3LjggMS40TDYuOCAzLjEgNS44IDEuNEM1LjEgMC40IDMuOSAwIDIuOSAwTDEuNSAwIDEuNCAwek0xLjUgMS41TDIuOSAxLjVDMy42IDEuNSA0LjIgMS43IDQuNSAyLjJMNi44IDYuMSA5IDIuMkM5LjMgMS43IDkuOSAxLjUgMTAuNiAxLjVMMTIgMS41IDEyIDEzLjUgMTAuMiAxMy41IDEwLjIgMy42IDYuOCA5LjUgMy4zIDMuNiAzLjMgMTMuNSAxLjUgMTMuNSAxLjUgMS41ek0zMi4xIDEuNUwzMy44IDEuNSAzMy44IDQuNUMzNC40IDQuNSAzNC44IDQuNSAzNS4zIDQuNSAzNy44IDQuNSAzOS43IDYuNCAzOS43IDkgMzkuNyAxMS42IDM3LjggMTMuNSAzNS4zIDEzLjVMMzIuMSAxMy41IDMyLjEgMS41ek0xNy42IDQuNUMyMCA0LjUgMjEuOCA2LjQgMjEuOCA5TDIxLjggMTMuNSAxNy42IDEzLjVDMTUuMSAxMy41IDEzLjQgMTEuNiAxMy40IDkgMTMuNCA2LjQgMTUuMSA0LjUgMTcuNiA0LjV6TTQ1LjEgNC41QzQ3LjUgNC41IDQ5LjUgNi41IDQ5LjUgOSA0OS41IDExLjUgNDcuNSAxMy41IDQ1LjEgMTMuNSA0Mi43IDEzLjUgNDAuNyAxMS41IDQwLjcgOSA0MC43IDYuNSA0Mi43IDQuNSA0NS4xIDQuNXpNMjMuMSA0LjVMMjYuNSA0LjVDMjguOSA0LjUgMzAuOCA2LjQgMzAuOCA5IDMwLjggMTEuNiAyOC45IDEzLjUgMjYuNSAxMy41TDI0LjkgMTMuNSAyNC45IDE2LjUgMjMuMSAxNi41IDIzLjEgNC41ek00OS4zIDQuNUw1MS40IDQuNSA1My40IDcuMyA1NS4zIDQuNSA1Ny41IDQuNSA1NC41IDguOSA1Ny43IDEzLjUgNTUuNSAxMy41IDUzLjQgMTAuNCA1MS4yIDEzLjUgNDkuMSAxMy41IDUyLjMgOC45IDQ5LjMgNC41ek0xNy42IDYuMkMxNi4yIDYuMiAxNS4xIDcuNCAxNS4xIDkgMTUuMSAxMC42IDE2LjIgMTEuOCAxNy42IDExLjhMMjAgMTEuOCAyMCA5QzIwIDcuNCAxOSA2LjIgMTcuNiA2LjJ6TTQ1LjEgNi4yQzQzLjcgNi4yIDQyLjUgNy41IDQyLjUgOSA0Mi41IDEwLjUgNDMuNyAxMS44IDQ1LjEgMTEuOCA0Ni42IDExLjggNDcuNyAxMC41IDQ3LjcgOSA0Ny43IDcuNSA0Ni42IDYuMiA0NS4xIDYuMnpNMjQuOSA2LjNMMjQuOSAxMS44IDI2LjUgMTEuOEMyNy45IDExLjggMjkuMSAxMC41IDI5LjEgOSAyOS4xIDcuNSAyOC4xIDYuMyAyNi41IDYuM0wyNC45IDYuM3pNMzMuOCA2LjNMMzMuOCAxMS44IDM1LjMgMTEuOEMzNi45IDExLjggMzggMTAuNSAzOCA5IDM4IDcuNSAzNi44IDYuMyAzNS4zIDYuM0wzMy44IDYuM3pNMTcuNiA3LjdDMTguMSA3LjcgMTguNSA4LjEgMTguNSA5TDE4LjUgMTAuMyAxNy42IDEwLjNDMTcgMTAuMyAxNi42IDkuOSAxNi42IDkgMTYuNiA4LjEgMTcgNy43IDE3LjYgNy43ek0yNi40IDcuN0MyNy4yIDcuNyAyNy42IDguNCAyNy42IDkgMjcuNiA5LjkgMjYuOSAxMC4zIDI2LjQgMTAuM0wyNi40IDcuN3pNMzUuMSA3LjdDMzUuOCA3LjcgMzYuNSA4LjMgMzYuNSA5IDM2LjUgOS44IDM1LjkgMTAuMyAzNS4xIDEwLjNMMzUuMSA3Ljd6TTQ1LjEgNy43QzQ1LjcgNy43IDQ2LjIgOC4yIDQ2LjIgOSA0Ni4yIDkuOCA0NS43IDEwLjMgNDUuMSAxMC4zIDQ0LjUgMTAuMyA0NCA5LjggNDQgOSA0NCA4LjIgNDQuNSA3LjcgNDUuMSA3Ljd6IiBvcGFjaXR5PSIwLjMiLz48cGF0aCBkPSJtMS41IDEuNSAwIDEyIDEuOCAwIDAtOS45IDMuNSA1LjkgMy41LTUuOSAwIDkuOSAxLjggMCAwLTEyLTEuNCAwQzkuOSAxLjUgOS4zIDEuNyA5IDIuMkw2LjggNi4xIDQuNSAyLjJDNC4yIDEuNyAzLjYgMS41IDIuOSAxLjVMMS41IDEuNVptMzAuNiAwIDAgMTIgMy4zIDBjMi40IDAgNC40LTEuOSA0LjQtNC41IDAtMi42LTEuOS00LjUtNC40LTQuNS0wLjUgMC0wLjkgMC0xLjUgMGwwLTMtMS43IDB6TTE3LjYgNC41Yy0yLjQgMC00LjIgMS45LTQuMiA0LjUgMCAyLjYgMS44IDQuNSA0LjIgNC41bDQuMiAwTDIxLjggOWMwLTIuNi0xLjctNC41LTQuMi00LjV6bTI3LjYgMGMtMi40IDAtNC40IDItNC40IDQuNSAwIDIuNSAyIDQuNSA0LjQgNC41IDIuNCAwIDQuMy0yIDQuMy00LjUgMC0yLjUtMS45LTQuNS00LjMtNC41em0tMjIgMCAwIDEyIDEuOCAwIDAtMyAxLjYgMGMyLjQgMCA0LjMtMS45IDQuMy00LjUgMC0yLjYtMS45LTQuNS00LjMtNC41bC0zLjMgMHptMjYuMiAwIDMgNC40LTMuMiA0LjYgMi4xIDAgMi4yLTMuMSAyLjEgMy4xIDIuMiAwTDU0LjUgOC45IDU3LjUgNC41IDU1LjMgNC41IDUzLjQgNy4zIDUxLjQgNC41IDQ5LjMgNC41Wk0xNy42IDYuMkMxOSA2LjIgMjAgNy40IDIwIDlsMCAyLjgtMi40IDBjLTEuNCAwLTIuNC0xLjItMi40LTIuOCAwLTEuNiAxLTIuOCAyLjQtMi44em0yNy42IDBjMS40IDAgMi42IDEuMiAyLjYgMi44IDAgMS41LTEuMiAyLjgtMi42IDIuOEM0My43IDExLjggNDIuNSAxMC41IDQyLjUgOWMwLTEuNSAxLjItMi44IDIuNi0yLjh6bS0yMC4yIDAgMS42IDBjMS42IDAgMi42IDEuMyAyLjYgMi44IDAgMS41LTEuMSAyLjgtMi42IDIuOGwtMS42IDAgMC01LjV6bTkgMCAxLjUgMGMxLjUgMCAyLjYgMS4zIDIuNiAyLjggMCAxLjUtMSAyLjgtMi42IDIuOGwtMS41IDAgMC01LjV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+' alt='Mapbox' />
-    </a>
-    <div id="mapContainer"></div>
-    <script>
-    // womens march specific token
-    mapboxgl.accessToken = 'pk.eyJ1IjoicmRhd2VzMSIsImEiOiJ0OHNqNUFFIn0.KpaFJHMqmruQ9UFeg2ATeA';
-    mapboxgl.util.getJSON('https://s3.amazonaws.com/mapbox-labs/labs-sisters-march/map-data.json', (err, data) => {
-        if (err) {
-            console.log(err);
-        } else {
-            processData(data);
-        }
-
-    })
-
-    const embed = !!window.location.search.match(/\?embed/g);
-
-    const map = new mapboxgl.Map({
-        style: "mapbox://styles/rdawes1/cj3ynl0ou16452qpgqa9phb32",
-        container: 'mapContainer',
-        maxBounds: [
-            [-212.34375, -85.34532513],
-            [196.875, 83.97]
-        ],
-        scrollZoom: !embed
-    });
-
-    function popupTemplate(feature) {
-        const data = feature.properties;
-        const date = new Date(data.start_date)
-        return `<div class='popup-container flex-parent--center-main flex-parent--wrap'>
-              <div class='align-l col col--12 p2 round txt-bold txt-s mb6'><a target="_blank" href=${data.url}>${data.title}</a></div>
-              <div class='txt-em align-l txt-s'>${date.toDateString()}</div>
-              <div class='address align-left txt-xs'>
-                <div>${data.venue}</div>
-                <div>${data.address}</div>
-                <div>${data.locality}, ${data.country} ${data.postal_code}</div>
-              </div>
-            </div>`
-    }
-
-    function listingTemplate(feature) {
-        const data = feature.properties;
-        const date = new Date(data.start_date);
-        const htmlContainer = document.createElement('div');
-        htmlContainer.innerHTML = `<div class="list-item py12">
-              <hr/>
-              <h3 class='align-l col col--12 p2  txt-bold txt-s mb6 px12'><a target="_blank" href=${data.url}>${data.title}</a></h3>
-              <div class='txt-em align-l txt-s px12'>${date.toDateString()}</div>
-              <div class='address align-left txt-xs px12'>
-                <div>${data.venue}</div>
-                <div>${data.address}</div>
-                <div>${data.locality}, ${data.country} ${data.postal_code}</div>
-              </div>
-            </div>`;
-        return htmlContainer.firstChild;
-    }
-
-    let loaded = false;
-    const geocoder = new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        flyTo: false,
-    });
-    geocoder.on('result', flyToResult);
-
-
-    map.on('load', function() {
-        loaded = true;
-        if (embed) {
-            map.addControl(new mapboxgl.NavigationControl(),'top-right');
-        }
-        const geocoderContainer = document.getElementById('geocoder-container');
-        const geocoderDOM = geocoder.onAdd(geocoderContainer);
-        geocoderDOM.classList.add('round-full');
-        geocoderContainer.appendChild(geocoderDOM);
-        const listingContainer = document.getElementById('march-list');
-        if (document.documentElement.clientHeight < 420) {
-            listingContainer.classList.remove('hmax-420-mm');
-            listingContainer.classList.add('hmax-240-mm')
-        }
-        geocoder._clearEl.addEventListener('click', function() {
-
-            listingContainer.innerHTML = '';
-            const searchContainer = document.getElementById('search');
-            // search.classList.add('round-bold-ml');
-            // search.classList.remove('round-t-bold-ml');
-        })
-        map.on('mousemove', function(e) {
-            const features = map.queryRenderedFeatures(e.point, {
-                layers: ['sister-marches-marker', 'sister-marches']
-            });
-            const mapContainer = map.getCanvas();
-            if (features.length && mapContainer.style.cursor === "") {
-                mapContainer.style.cursor = "pointer";
-            }
-            if (!features.length && mapContainer.style.cursor === "pointer") {
-                mapContainer.style.cursor = "";
-            }
-        });
-
-    });
-
-    map.on('zoomend', function() {
-
-        const listingContainer = document.getElementById('march-list');
-        const searchContainer = document.getElementById('search');
-        if (map.getZoom() >= 6.5) {
-            const areaMarches = map.queryRenderedFeatures({
-                layers: ['sister-marches-marker']
-            });
-            // search.classList.remove('round-bold-ml');
-            // search.classList.add('round-t-bold-ml');
-
-            listingContainer.innerHTML = '';
-
-            const uniqueMarches = getUniqueFeatures(areaMarches, 'id').sort((a, b) => {
-                const spot = geocoder.spot !== null ? geocoder.spot.center : [map.getCenter().lng, map.getCenter().lat];
-                let sorter = turf.distance(a, spot) > turf.distance(b, spot);
-                if (sorter) {
-                    return 1
-                } else {
-                    return -1
-                }
-            });
-            geocoder.spot = null;
-
-            for (let i = 0; i < uniqueMarches.length; i++) {
-                let listing = listingTemplate(uniqueMarches[i]);
-                listingContainer.appendChild(listing);
-            }
-        } else {
-            listingContainer.innerHTML = '';
-            // search.classList.add('round-bold-ml');
-            // search.classList.remove('round-t-bold-ml');
-        }
-    });
-
-
-    map.on('click', function(e) {
-        var clusters = map.queryRenderedFeatures(e.point, {
-            layers: ['sister-marches']
-        });
-        if (clusters.length) {
-            map.flyTo({
-                center: e.lngLat,
-                zoom: map.getZoom() + 2
-            });
-            return;
-        }
-
-        var march = map.queryRenderedFeatures(e.point, {
-            layers: ['sister-marches-marker']
-        });
-        if (march.length) {
-            const popup = new mapboxgl.Popup({
-                    closeButton: false
-                })
-                .setLngLat(march[0].geometry.coordinates)
-                .setHTML(popupTemplate(march[0]))
-                .addTo(map);
-        }
-    });
-
-    function flyToResult(geocoderResponse) {
-        geocoder.spot = geocoderResponse.result;
-        map.flyTo({
-            center: geocoder.spot.center,
-            zoom: 8
-        });
-
-    }
-
-    function getUniqueFeatures(array, comparatorProperty) {
-        var existingFeatureKeys = {};
-        // Because features come from tiled vector data, feature geometries may be split
-        // or duplicated across tile boundaries and, as a result, features may appear
-        // multiple times in query results.
-        var uniqueFeatures = array.filter(function(el) {
-            if (existingFeatureKeys[el.properties[comparatorProperty]]) {
-                return false;
-            } else {
-                existingFeatureKeys[el.properties[comparatorProperty]] = true;
-                return true;
-            }
-        });
-
-        return uniqueFeatures;
-    }
-
-    function assembleMap(marchGeoJSON) {
-        if (loaded) {
-            map.addLayer({
-                id: 'sister-marches',
-                type: 'circle',
-                source: {
-                    type: 'geojson',
-                    data: marchGeoJSON,
-                    cluster: true,
-                    clusterRadius: 30,
-                    clusterMaxZoom: 5
-
-                },
-                paint: {
-                    'circle-color': {
-                        property: 'point_count',
-                        type: 'exponential',
-                        stops: [
-                            [{
-                                zoom: 1,
-                                value: 10
-                            }, '#0093D0'],
-                            [{
-                                zoom: 1,
-                                value: 100
-                            }, '#0093D0'],
-                            [{
-                                zoom: 5,
-                                value: 2
-                            }, '#0093D0'],
-                            [{
-                                zoom: 5,
-                                value: 20
-                            }, '#0093D0']
-                        ]
-                    },
-                    'circle-radius': {
-                        property: "point_count",
-                        type: "exponential",
-                        stops: [
-                            [{
-                                zoom: 1,
-                                value: 2
-                            }, 10],
-                            [{
-                                zoom: 6,
-                                value: 2
-                            }, 15],
-                            [{
-                                zoom: 1,
-                                value: 100
-                            }, 30],
-                            [{
-                                zoom: 4,
-                                value: 50
-                            }, 20],
-                        ]
-                    },
-                    'circle-stroke-color': 'white',
-                    'circle-stroke-width': 2
-                },
-                filter: [">", "point_count", 1]
-            }).addLayer({
-                id: "sister-march-cluster-labels",
-                type: 'symbol',
-                source: 'sister-marches',
-                layout: {
-                    "text-field": "{point_count}",
-                    
-                    "text-size": 12,
-                    "text-offset": [0, .2]
-                },
-                paint: {
-                    "text-color": "white",
-                    // "text-halo-color": '#fff',
-                    // "text-halo-width": 1
-                }
-            }).addLayer({
-                id: 'sister-marches-marker',
-                type: 'symbol',
-                source: 'sister-marches',
-                layout: {
-                    'icon-image': 'marker',
-                    'icon-size': .8,
-                    'icon-allow-overlap': true
-                },
-                filter: ["any", ["!has", "point_count"],
-                    ["==", "point_count", 1]
-                ]
-            });
-        } else {
-            setTimeout(assembleMap.bind(this, marchGeoJSON), 50)
-        }
-    }
-
-    function processData(data) {
-        let output = {
-            type: "FeatureCollection",
-            features: []
-        };
-
-        for (let i = 0; i < data.length; i++) {
-            let e = data[i]
-            if (e.location.venue !=="Test" && e.location && e.location.location) {
-
-                // some marches have special external urls
-                let title = null,
-                    url = null;
-                if (e.title.match(/\|/g)) {
-                    let titleUrl = e.title.split('|');
-                    title = titleUrl[0].trim();
-                    url = titleUrl[1].trim();
-                }
-
-
-                let geojson = {
-                    type: "Feature",
-                    geometry: {
-                        type: "Point",
-                        coordinates: [e.location.location.longitude, e.location.location.latitude]
-                    },
-                    properties: {
-                        id: i,
-                        start_date: e.start_date,
-                        "venue": e.location.venue,
-                        "address": e.location.address_lines.join("|"),
-                        "locality": e.location.locality,
-                        "region": e.location.region,
-                        "postal_code": e.location.postal_code,
-                        "country": e.location.country,
-                        "url": url ? url : e.browser_url,
-                        name: e.name,
-                        title: title ? title : e.title
-                    }
-                };
-                output.features.push(geojson);
-            } else {
-                console.log('no location data for ', e.name);
-            }
-        }
-
-        assembleMap(output);
-    }
-    </script>
+  </div>
+</div>
+  <div id="map"></div>
+   <script src='index.js'></script>
 </body>
 
 </html>
