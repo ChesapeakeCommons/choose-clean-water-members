@@ -33,6 +33,8 @@ map.addControl(new MapboxGeocoder({
     accessToken: mapboxgl.accessToken
 }));
 
+map.addControl(new mapboxgl.NavigationControl());
+
 function flyHandler(id, options) {
   var button = document.getElementById(id);
   if(!button) return;
@@ -56,9 +58,39 @@ flyHandler('baystates', {
     zoom: 6.0
 });
 
+flyHandler('ny', {
+center: [-76.351, 42.384],
+zoom: 8.1
+});
+
 flyHandler('pa', {
-center: [-77.328, 40.814],
-zoom: 7.9
+center: [-77.206, 41.022],
+zoom: 7.5
+});
+
+flyHandler('md', {
+center: [-77.401, 39.018],
+zoom: 7.7
+});
+
+flyHandler('de', {
+center: [-75.258, 38.938],
+zoom: 8.7
+});
+
+flyHandler('dc', {
+center: [-77.071, 38.886],
+zoom: 10.5
+});
+
+flyHandler('va', {
+center: [-78.086, 37.784],
+zoom: 7.8
+});
+
+flyHandler('wv', {
+center: [-79.816, 38.788],
+zoom: 7.6
 });
 
 
