@@ -55,7 +55,7 @@ function flyHandler(id, options) {
 
 flyHandler('baystates', {
     center: [-79.072, 39.988],
-    zoom: 6.0
+    zoom: 6.1
 });
 
 flyHandler('ny', {
