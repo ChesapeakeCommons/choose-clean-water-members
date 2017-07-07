@@ -33,6 +33,8 @@ map.addControl(new MapboxGeocoder({
     accessToken: mapboxgl.accessToken
 }));
 
+map.scrollZoom.disable();
+
 map.addControl(new mapboxgl.NavigationControl());
 
 function flyHandler(id, options) {
@@ -105,3 +107,5 @@ function getQueryVariable(variable) {
     }
     console.log('Query variable %s not found', variable);
 }
+
+
