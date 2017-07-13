@@ -3,13 +3,13 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmRhd2VzMSIsImEiOiJ0OHNqNUFFIn0.KpaFJHMqmruQ9
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/rdawes1/cj3ynl0ou16452qpgqa9phb32'// replace this with your style
+    style: 'mapbox://styles/rdawes1/cj52rvywt1l9u2rr74fw6hioc'// replace this with your style
    
 });
 
 map.on('click', function(e) {
     var features = map.queryRenderedFeatures(e.point, {
-        layers: ['ccwc-members'] // replace this with the name of the layer
+        layers: ['nrnn-members'] // replace this with the name of the layer
     });
 
     if (!features.length) {
@@ -18,14 +18,14 @@ map.on('click', function(e) {
 
     var feature = features[0];
 
-    var url = (feature.properties.web) ? feature.properties.web : "#",
+    var url = (feature.properties.website) ? feature.properties.website : "#",
         target = (url === "#") ? "_self" : "_blank";
 
     var popup = new mapboxgl.Popup({
             offset: [0, -15]
         })
         .setLngLat(feature.geometry.coordinates)
-        .setHTML('<a class=\"popup-link\" href=\"' + url + '\" target=\"' + target + '\"><strong>' + feature.properties.company + '</strong></a><p>' + feature.properties.locality + '</p>')
+        .setHTML('<a class=\"popup-link\" href=\"' + url + '\" target=\"' + target + '\"><strong>' + feature.properties.organization + '</strong></a><p>' + feature.properties.region + '</p>')
         .setLngLat(feature.geometry.coordinates)
         .addTo(map);
 });
