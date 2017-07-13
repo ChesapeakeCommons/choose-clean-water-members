@@ -9,7 +9,7 @@ var map = new mapboxgl.Map({
 
 map.on('click', function(e) {
     var features = map.queryRenderedFeatures(e.point, {
-        layers: ['nrnn-members'] // replace this with the name of the layer
+        layers: ['nrnn-members', 'regional-members', 'national-members'] // replace this with the name of the layer
     });
 
     if (!features.length) {
