@@ -25,7 +25,8 @@ map.on('click', function(e) {
             offset: [0, -15]
         })
         .setLngLat(feature.geometry.coordinates)
-        .setHTML('<a class=\"popup-link\" href=\"' + url + '\" target=\"' + target + '\"><strong>' + feature.properties.organization + '</strong></a><p>' + feature.properties.region + '</p>')
+        .setHTML('<a class=\"popup-link\" href=\"' + url + '\" target=\"' + target + '\"><strong>' + feature.properties.organization + '</strong></a><p>' + feature.properties.region + '</p>' + 
+            '</strong></a>' + '<strong>' + 'Members:  ' + '</strong>' + feature.properties.members)
         .setLngLat(feature.geometry.coordinates)
         .addTo(map);
 });
