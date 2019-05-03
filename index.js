@@ -3,35 +3,28 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aXNtIiwiYSI6ImNqczR6Zmk3ZDBhZDY0OXBib3M5e
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/davism/cjs52ovxv185p1fqjthe3lzyr'// replace this with your style
-   
+    style: 'mapbox://styles/davism/cjs52ovxv185p1fqjthe3lzyr',// replace this with your style
+    center: [-80.770, 39.879],
+    zoom: 5.62
 });
 
 map.on('click', function(e) {
-    var features = map.queryRenderedFeatures(e.point, {
-        layers: ['nrnn-members', 'regional-members', 'national-members', 'state-2h2qq0'] // replace this with the name of the layer
-    });
+  var features = map.queryRenderedFeatures(e.point, {
+    layers: ['ccwc-members-3dstew'] // replace this with the name of the layer
+  });
 
-    if (!features.length) {
-        return;
-    }
+  if (!features.length) {
+    return;
+  }
 
-    var feature = features[0];
+  var feature = features[0];
 
-    var url = (feature.properties.website) ? feature.properties.website : "#",
-        target = (url === "#") ? "_self" : "_blank";
-
-    var popup = new mapboxgl.Popup({
-            offset: [0, -15]
-        })
-        .setLngLat(feature.geometry.coordinates)
-        .setHTML('<a class=\"popup-link\" href=\"' + url + '\" target=\"' + target + '\"><strong>' + feature.properties.organization + '</strong></a><p>' + feature.properties.region + '</p>' + 
-            '</strong></a>' + '<strong>' + 'Members:  ' + '</strong>' + feature.properties.members)
-        .setLngLat(feature.geometry.coordinates)
-        .addTo(map);
+  var popup = new mapboxgl.Popup({ offset: [0, -15] })
+    .setLngLat(feature.geometry.coordinates)
+    .setHTML('<h3>' + feature.properties.company + '</h3><p>' + '<strong>Members: </strong>' + feature.properties.organizationsize + '</br>' + '<strong>Focal Area: </strong>' + feature.properties.orgarea + '</p>')
+    .setLngLat(feature.geometry.coordinates)
+    .addTo(map);
 });
-
-
 
 map.addControl(new MapboxGeocoder({
     accessToken: mapboxgl.accessToken
