@@ -8,6 +8,8 @@ var map = new mapboxgl.Map({
     zoom: 5.62
 });
 
+
+
 map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
     layers: ['ccwc-members-3dstew'] // replace this with the name of the layer
@@ -25,6 +27,7 @@ map.on('click', function(e) {
     .setLngLat(feature.geometry.coordinates)
     .addTo(map);
 });
+
 
 map.addControl(new MapboxGeocoder({
     accessToken: mapboxgl.accessToken
@@ -51,6 +54,8 @@ function flyHandler(id, options) {
     }
   });
 }
+
+
 
 flyHandler('baystates', {
     center: [-79.072, 39.988],
@@ -105,4 +110,15 @@ function getQueryVariable(variable) {
     console.log('Query variable %s not found', variable);
 }
 
+var layerList = document.getElementById('menu');
+var inputs = layerList.getElementsByTagName('input');
+ 
+function switchLayer(layer) {
+var layerId = layer.target.id;
+map.setStyle('mapbox://styles/davism/' + layerId);
+}
+ 
+for (var i = 0; i < inputs.length; i++) {
+inputs[i].onclick = switchLayer;
+}
 
