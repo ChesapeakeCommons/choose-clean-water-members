@@ -23,7 +23,7 @@ map.on('click', function(e) {
 
   var popup = new mapboxgl.Popup({ offset: [0, -15] })
     .setLngLat(feature.geometry.coordinates)
-    .setHTML('<h3>' + feature.properties.company + '</h3><p>' + '<strong>Members: </strong>' + feature.properties.organizationsize + '</br>' + '<strong>Focal Area: </strong>' + feature.properties.orgarea + '</p>')
+    .setHTML('<h3><a href="' + feature.properties.website + '"target="_blank">' + feature.properties.company + '</a></h3><p>' + '<strong>Members: </strong>' + feature.properties.organizationsize + '</br>' + '<strong>Focal Area: </strong>' + feature.properties.orgarea + '</p>')
     .setLngLat(feature.geometry.coordinates)
     .addTo(map);
 });
